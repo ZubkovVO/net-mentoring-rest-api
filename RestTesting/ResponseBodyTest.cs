@@ -1,17 +1,14 @@
 ﻿using Newtonsoft.Json;
 using RestSharp;
-using RestSharp.Serialization.Json;
-using System;
 using System.Collections.Generic;
-using System.Text;
 using Xunit;
 
 namespace RestTesting
 {
-    public class ResponseBody
+    public class ResponseBodyTest
     {
         [Fact]
-        public void ContentTypeTest()
+        public void Response_Body_Contains_10Users()
         {
             // arrange
             RestClient client = new RestClient("https://jsonplaceholder.typicode.com");
@@ -24,7 +21,6 @@ namespace RestTesting
 
             // assert
            Assert.Equal(10, root.Count);
-
         }
     }
 }

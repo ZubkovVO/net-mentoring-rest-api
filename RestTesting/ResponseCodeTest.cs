@@ -1,11 +1,10 @@
 using RestSharp;
-using System;
 using System.Net;
 using Xunit;
 
 namespace RestTesting
 {
-    public class ResponseCode
+    public class ResponseCodeTest
     {
         [Fact]
         public void Response_code_200()

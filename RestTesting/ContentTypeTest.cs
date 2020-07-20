@@ -1,15 +1,12 @@
 ﻿using RestSharp;
-using System;
-using System.Collections.Generic;
-using System.Text;
 using Xunit;
 
 namespace RestTesting
 {
-    public class ContentType
+    public class ContentTypeTest
     {
         [Fact]
-        public void ContentTypeTest()
+        public void Content_Type_Verification()
         {
             // arrange
             RestClient client = new RestClient("https://jsonplaceholder.typicode.com/users");
